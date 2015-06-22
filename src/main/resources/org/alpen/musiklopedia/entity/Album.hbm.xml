@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 21, 2015 10:43:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="org.alpen.musiklopedia.entity.Album" table="album" catalog="musiklopedia" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="namaalbum" type="string">
+            <column name="namaalbum" length="100" not-null="true" />
+        </property>
+        <property name="namaband" type="string">
+            <column name="namaband" length="100" not-null="true" />
+        </property>
+        <property name="pencipta" type="string">
+            <column name="pencipta" length="100" not-null="true" />
+        </property>
+        <property name="tahun" type="string">
+            <column name="tahun" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
